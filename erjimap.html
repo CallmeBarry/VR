@@ -1,0 +1,94 @@
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .item91,.item92,.item93,.item94,.item95,.item96,.item97 {
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: absolute;
+            background: #ff49fa;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+        }
+
+        .backerji {
+            position: absolute;
+            left: 20%;
+            top: 3%;
+            z-index: 10;
+            display: none;
+            width: 77px;
+            height: 85px;
+            background: url('img/backerji.png') no-repeat center center;
+            animation: move3 1.4s infinite linear;
+            -webkit-animation: move3 1.4s infinite linear;
+            background-size: 100% 100%;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="item99">
+    <img src="img/erjimap.jpg" alt="">
+    <div class="xxxy" style="position: absolute;top: 130px;left:114px ;width: 170px;height: 170px;"></div>
+    <div class="hsxy" style="position: absolute;top: 130px;left:355px ;width: 170px;height: 170px;"></div>
+    <div class="gdxy" style="position: absolute;top: 345px;left:114px;width: 170px;height: 170px;"></div>
+    <div class="tmxy" style="position: absolute;top: 345px;left:355px;width: 170px;height: 170px;"></div>
+    <div class="qcxy" style="position: absolute;top: 557px;left: 114px;width: 170px;height: 170px;"></div>
+    <div class="ysxy" style="position: absolute;top: 557px;left: 355px;width: 170px;height: 170px;"></div>
+    <div class="jdxy" style="position: absolute;top: 770px;left: 114px;width: 170px;height: 170px;"></div>
+</div>
+<div class="backerji"></div>
+<div class="item91"></div>
+<div class="item92"></div>
+<div class="item93"></div>
+<div class="item94"></div>
+<div class="item95"></div>
+<div class="item96"></div>
+<div class="item97"></div>
+</body>
+    <script src="js/jquery.min.js"></script>
+<script>
+    $(".xxxy").on('touchend', function () {$('.item91').html('<p>信息学院实训室</p><iframe src="./3d/xx/xx.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>');  $('.item91').show().siblings().hide(); $('.backerji').show();  });
+    $(".hsxy").on('touchend', function () {$('.item92').html('<p>海事学院实训室</p><iframe src="./3d/hs/hs.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>');  $('.item92').show().siblings().hide(); $('.backerji').show();  });
+    $(".gdxy").on('touchend', function () {$('.item93').html('<p>轨道学院实训室</p><iframe src="./3d/gd/gd.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>');  $('.item93').show().siblings().hide(); $('.backerji').show();  });
+    $(".tmxy").on('touchend', function () {$('.item94').html('<p>土木学院实训室</p><iframe src="./3d/tm/tm.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>');  $('.item94').show().siblings().hide(); $('.backerji').show();  });
+    $(".qcxy").on('touchend', function () {$('.item95').html('<p>汽车学院实训室</p><iframe src="./3d/qc/qc.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>');  $('.item95').show().siblings().hide(); $('.backerji').show();  });
+    $(".ysxy").on('touchend', function () {$('.item96').html('<p>运管学院实训室</p><iframe src="./3d/yg/yg.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>');  $('.item96').show().siblings().hide(); $('.backerji').show();  });
+    $(".jdxy").on('touchend', function () {$('.item97').html('<p>机电学院实训室</p><iframe src="./3d/gd/gd.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>');  $('.item97').show().siblings().hide(); $('.backerji').show();  });
+
+    $(".backerji").on('touchend', function () {
+        $('.item91').hide();
+                $('.item92').hide();
+                $('.item93').hide();
+                $('.item94').hide();
+                $('.item95').hide();
+                $('.item96').hide();
+                $('.item97').hide();
+        $('.item99').show();
+        $(".backerji").hide();
+    })
+
+</script>
+<script>
+    // 禁止页面移动
+    var jinzhi=0;
+    document.addEventListener("touchmove",function(e){
+        if(jinzhi==0){
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    },false);
+
+</script>

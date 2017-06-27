@@ -1,0 +1,45 @@
+<skin marginleft="0" marginright="0" margintop="0" marginbottom="0" ><element x="363" y="163" anchor="0" width="5" height="5" id="hs1" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="hotspot" distort="0" distance="500" >
+<action src="click" type="gotourl" value="$hu" value2="$ht" target="$self" />
+<action src="over" type="show" value="" value2="" target="hstext1_temp" />
+<action src="leave" type="hide" value="" value2="" target="hstext1_temp" />
+<element x="-16" y="0" anchor="0" width="34" height="34" id="hsanniu1" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/hsanniu1.png" >
+<action src="enter" type="changerotation" value="360" value2="" target="$self" />
+<action src="leave" type="changerotation" value="0" value2="" target="$self" />
+</element>
+<element x="-25" y="-25" anchor="0" width="54" height="17" id="hstext1_temp" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xff0000" bordercolor="0xff0000" borderalpha="1" backgroundcolor="0xffff7f" backgroundalpha="1" backgroundvisible="1" borderwidth="1" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+</element>
+<element x="-110" y="-51" anchor="4" width="224" height="64" id="loading image" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="image" imgurl="images/loading_image.png" >
+<action src="loaded" type="setscale" value="0" value2="" target="$self" />
+<element x="12" y="14" anchor="0" width="200" height="20" id="loading text" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="&lt;b&gt;Loading... $p%&lt;/b&gt;" align="0" color="0x000000" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="0" >
+</element>
+<element x="12" y="40" anchor="0" width="200" height="12" id="loading bar" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="3" handcursor="0" type="rectangle" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x4f4f4f" backgroundalpha="1" backgroundvisible="1" borderwidth="2" borderradius="0" >
+<modifier src="loading" type="scalex" offset="0" factor="1" />
+</element>
+<element x="200" y="1" anchor="0" width="24" height="24" id="loading close" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="image" imgurl="images/loading_close.png" >
+<action src="click" type="hide" value="" value2="" target="$parent" />
+</element>
+</element>
+<element x="-148" y="-45" anchor="7" width="284" height="42" id="tool" visible="1" alpha="0.6" angle="0" scalex="1" scaley="1" center="7" handcursor="0" type="rectangle" bordercolor="0xd6d6d6" borderalpha="1" backgroundcolor="0xf6f6f6" backgroundalpha="1" backgroundvisible="1" borderwidth="1" borderradius="9" >
+<action src="over" type="changealpha" value="0.8" value2="" target="$self" />
+<action src="leave" type="changealpha" value="0.6" value2="" target="$self" />
+<element x="10" y="1" anchor="0" width="40" height="40" id="tool_left" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/tool_left.png" >
+<action src="pressed" type="panleft" value="" value2="" target="$self" />
+</element>
+<element x="55" y="2" anchor="0" width="40" height="40" id="tool_right" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/tool_right.png" >
+<action src="pressed" type="panright" value="" value2="" target="$self" />
+</element>
+<element x="100" y="1" anchor="0" width="40" height="40" id="tool_up" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/tool_up.png" >
+<action src="pressed" type="tiltup" value="" value2="" target="$self" />
+</element>
+<element x="145" y="1" anchor="0" width="40" height="40" id="tool_down" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/tool_down.png" >
+<action src="pressed" type="tiltdown" value="" value2="" target="$self" />
+</element>
+<element x="190" y="1" anchor="0" width="40" height="40" id="tool_zoomin" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/tool_zoomin.png" >
+<action src="pressed" type="zoomin" value="" value2="" target="$self" />
+</element>
+<element x="235" y="1" anchor="0" width="40" height="40" id="tool_zoomout" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/tool_zoomout.png" >
+<action src="pressed" type="zoomout" value="" value2="" target="$self" />
+</element>
+</element>
+</skin>
